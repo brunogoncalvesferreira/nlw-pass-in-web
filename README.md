@@ -44,26 +44,50 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 
 - [ ]  O check-in no evento será realizado através de um QRCode;
 
-<h2 id="technology"> Tecnologias</h2>
+<h2 id="technology">Tecnologias</h2>
 
 Abaixo as tecnologias que utilizamos para o desenvolvimento do projeto:
 
 > Frontend
  - React
  - Typescript
- - Tailwind CSS
+ - Tailwind CSS (Tailwind-merge)
  - Lucide React Icons
+ - Dayjs - Lib para trabalhar com datas
 
 <h2 id="usage">Rodar projeto</h2>
 
 Para rodar o projeto localmente, precisamos ter o `Node.js` e o `npm` instalados.
 
 Siga o passo a passo:
-> git clone
+> Clonar o backend para o frontend funcionar
+```
+$ git clone https://github.com/rocketseat-education/nlw-unite-nodejs.git
+```
+> Acesse a pasta
+```
+$ cd nlw-unite-nodejs
+```
+> Instalar as dependências do backend
+```
+$ npm install
+```
+> Criar um arquivo .env na raiz do projeto backend é digitar o seguinte comando
+```
+DATABASE_URL="file:./dev.db"
+```
+> Rodar o seed para inserir dados no seu banco de dados
+```
+$ npx prisma db seed
+```
+> Rodar o backend
+```
+$ npm run dev
+```
+> git clone frontend
 ```
 $ git clone https://github.com/brunogoncalvesferreira/nlw-pass-in-web.git
 ```
-
 > Acesse a pasta
 ```
 $ cd nlw-pass-in-web
@@ -76,6 +100,7 @@ $ npm install
 ```
 $ npm run dev
 ```
+
 <h2 id="license"> Licença</h2>
 
 Este projeto está sob a licença MIT.

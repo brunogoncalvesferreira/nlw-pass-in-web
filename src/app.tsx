@@ -1,4 +1,4 @@
-import { AttendeeList } from "./components/attendee-list";
+import { AttendeeList } from "./components/attendees-list";
 import { Header } from "./components/header";
 
 export function App() {
